@@ -3,12 +3,14 @@ kind: operation
 name: run-linear-regression-experiment
 tags: [run, ml, experiment]
 component:
-  name: linear-regression-experiment
   run:
     kind: job
-    container:
-      image: python:3.8
-      command: [python, "-u", "main.py"]
     init:
     - git:
         url: "https://github.com/csancho/pythontest.git"
+    - container:
+        image: python:3.8
+        command: [pip, install, -r, requirements.txt]
+    container:
+      image: python:3.8
+      command: [python, "-u", "main.py"]
