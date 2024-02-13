@@ -10,5 +10,5 @@ component:
       command: [python, "-u", "main.py"]
     init:
     - git:
-        url: "https://gitlab.com/c.sancho1/pythontest.git"
+        url: "https://github.com/csancho/pythontest.git"
         revision: "master"

@@ -11,5 +11,5 @@ component:
       command: [python, "-u", "app.py"] # Assuming 'app.py' is your Flask/Django/FastAPI app
     init:
     - git:
-        url: "https://gitlab.com/c.sancho1/pythontest.git"
+        url: "https://github.com/csancho/pythontest.git"
         revision: "master"
