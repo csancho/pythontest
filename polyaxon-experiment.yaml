@@ -8,6 +8,7 @@ component:
     init:
     - git:
         url: "https://github.com/csancho/pythontest.git"
+        revision: "main"
     - container:
         image: python:3.8
         command: [pip, install, -r, requirements.txt]
